@@ -1,0 +1,180 @@
+.html{
+    margin:0;
+    padding:0;
+    
+}
+body{
+    overflow: hidden;
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.photos{
+    width:auto;
+    height:70vh;
+    margin-left: 30px;
+    margin-top: 25vh;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+textarea{
+    width: 100%;
+    padding-bottom: 80%;
+    resize: none;
+    border: 2px solid black;
+}
+.photos-container{
+    display:flex;
+    flex-direction: row;
+    width: 830vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    margin-left: 20px;
+}
+.container{
+    width:100vh;
+    height:100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+}
+.logo{
+    margin: 3rem;
+    z-index: 1;
+    width: 400px;
+    height:auto;
+    float:left;
+    position:absolute;
+}
+.bio{
+    height:70vh;
+    max-width: 420px;
+    margin-left: 30px;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100%;
+    align-items: center;
+    margin: right 120px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    z-index: 1; 
+    height:auto;
+    right:0;
+    position:absolute;
+}
+a{
+    
+    text-decoration: none;
+}
+.a{
+    margin-right: 30px;
+}
+.emailform{
+    margin-top: 10px;
+}
+.label{
+    margin-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input{
+    padding: 5px;
+    border: 2px solid black;
+}
+.media{
+    margin-bottom:1rem;
+    width: auto;
+    max-height: 50px;
+}
+::-webkit-scrollbar{
+    width: .5em;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background: #777777
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#414141;
+}
+@media (min-width:768px){
+    .bio{
+        height:70vh;
+        min-width: 140px;
+        margin-left: 30px;
+        margin-top: 25vh;
+    }
+}
+
+
+@media (max-width:550px){
+    .logo{
+        margin:2rem;
+        z-index: 1;
+        width: 300px;
+        height:auto;
+        float:left;
+        position:absolute;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        z-index: 1; 
+        height:auto;
+        left:0;
+        position:absolute;
+        margin:2rem;
+        margin-left: 3rem;
+    }
+    .media{
+        margin-top:6rem;
+        margin-right:2rem;
+        width: auto;
+        max-height: 50px;
+    }
+    .bio{
+        height:70vh;
+        min-width: 140px;
+        margin-left: 30px;
+        margin-top: 25vh;
+    }
+    
+      
+      
+}
+.getincontact{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 2px solid black;
+    background-color: white;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+}
+.getincontact::before{
+    content: 'Get in Contact';
+    position: absolute;
+    top: -14%;
+    left: 7%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease-in-out;
+    font-weight: bold;
+}
+
+.getincontact:hover::before{
+    top: 0;
+    left: 0;
+}
