@@ -219,6 +219,10 @@ header p span{
     .bio{
         min-width:60vw !important;
         margin-right:10px;
+
+    }
+    .bio p{
+        font-size: 10pt !important;
     }
     .social{
         bottom:0;
