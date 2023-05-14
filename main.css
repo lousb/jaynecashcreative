@@ -223,6 +223,9 @@ header p span{
     .social{
         bottom:0;
     }
+    .media{
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 600px) {
     header p{
